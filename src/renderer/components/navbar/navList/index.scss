@@ -1,4 +1,5 @@
 .nav-list {
+  font-family: Days One;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,43 +16,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     color: #2c253e;
 
     a {
       margin: 0;
-      font-family: var(--title-font);
       color: #2c253e;
       font-weight: 900;
       letter-spacing: normal;
       > div {
+        font-family: Days One;
         color: #2c253e;
-        font-family: var(--content-font) !important;
-        text-transform: capitalize;
         font-size: 15px;
         font-weight: 800;
       }
     }
-    ::before {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      // background-color: white;
-      background-color: #2c253e;
-    }
-    ::after {
-      content: "";
-      position: absolute;
-      bottom: 8px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      // background-color: white;
-      background-color: #2c253e;
-    }
+    // ::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 8px;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 1px;
+    //   // background-color: white;
+    //   background-color: #2c253e;
+    // }
+    // ::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 8px;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 1px;
+    //   // background-color: white;
+    //   background-color: #2c253e;
+    // }
   }
   > div {
     margin-bottom: 20px;
@@ -115,7 +114,7 @@
 
 @media (max-width: 992px) {
   .nav-list {
-    margin-top: 60%;
+    margin-top: 0;
     justify-content: flex-start;
     .my-apes {
       a {
@@ -124,6 +123,10 @@
           font-weight: 700;
         }
       }
+    }
+    .hamburger-logo{
+      width: 111px;
+      height: 59px;
     }
   }
 }

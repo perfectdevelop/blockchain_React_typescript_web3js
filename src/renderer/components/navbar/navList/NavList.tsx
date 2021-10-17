@@ -4,11 +4,21 @@ import { Link } from "react-router-dom";
 import { useTrail } from "@react-spring/core";
 import { animated } from "@react-spring/web";
 import { scrollIntoViewCalc } from "../../../../utils/scrollIntoView";
-import { useHistory } from "react-router"; /* 
+import { useHistory } from "react-router"; 
+import { useRef, useState } from 'react'
+/* 
 import useReduxState from "../../../hooks/useReduxState"; */
 
-import { ReactComponent as Twitter } from "../../../../assets/images/icons/twitter.svg";
-import { ReactComponent as Discord } from "../../../../assets/images/icons/discord.svg";
+// import { ReactComponent as Twitter } from "../../../../assets/images/icons/twitter.svg";
+// import { ReactComponent as Discord } from "../../../../assets/images/icons/discord.svg";
+import Discord from '../../../../assets/images/pictures/social/discord.png';
+import Twitter from '../../../../assets/images/pictures/social/twitter.png';
+import Instagram from '../../../../assets/images/pictures/social/instagram.png';
+import Opensea from '../../../../assets/images/pictures/social/opensea.png';
+import Logo from '../../../../assets/images/pictures/logos/logo.png';
+import ConnectButton from "../connectButton/ConnectButton";
+
+
 
 import React from "react";
 
@@ -21,7 +31,9 @@ export default function NavList({
   style?: React.CSSProperties;
   close: () => void;
 }): JSX.Element {
+  const leftNav = useRef<HTMLDivElement>(null);
   const history = useHistory();
+  const [menu, setMenu] = useState(false);
   const trail = useTrail(9, {
     from: { x: 500, opacity: 0 },
     x: open ? 0 : 500,
@@ -38,9 +50,7 @@ export default function NavList({
           /* to={connected ? "/my-apes" : "/"} */
           //style={connected ? { color: "white" } : { color: "#2c253e" }}
         >
-          My Apes
-          <div>Live in 5 hours</div>
-          <div>Apes can be seen from phantom now</div>
+         <img src={Logo} alt="" className="hamburger-logo" />
         </Link>
       </animated.div>
       <animated.div style={trail[1]}>
@@ -64,7 +74,7 @@ export default function NavList({
             scrollIntoViewCalc("roadmap");
           }}
         >
-          Utility & Roadmap
+          Collections
         </span>
       </animated.div>
       <animated.div style={trail[3]}>
@@ -76,13 +86,13 @@ export default function NavList({
             scrollIntoViewCalc("traits");
           }}
         >
-          Rarity
+          Mobile app
         </span>
       </animated.div>
       <animated.div style={trail[4]}>
-        <Link to="/rarities">Academy Traits</Link>
+        <Link to="/rarities">Roadmap</Link>
       </animated.div>
-      <animated.div style={trail[5]}>
+      {/* <animated.div style={trail[5]}>
         <span
           onClick={async () => {
             if (history.location.pathname !== "/") {
@@ -93,7 +103,7 @@ export default function NavList({
         >
           Faq
         </span>
-      </animated.div>
+      </animated.div> */}
       <br />
       <animated.div className="nav-social" style={trail[6]}>
         <a
@@ -101,17 +111,17 @@ export default function NavList({
           target="_blank"
           rel="noreferrer"
         >
-          <Twitter />
+          {/* <Twitter /> */}
         </a>
         <a
           href="http://discord.gg/degenapeacademy"
           target="_blank"
           rel="noreferrer"
         >
-          <Discord />
+          {/* <Discord /> */}
         </a>
       </animated.div>
-      <animated.div style={trail[7]}>
+      {/* <animated.div style={trail[7]}>
         <span
           className="nl-terms"
           style={{
@@ -126,7 +136,11 @@ export default function NavList({
         >
           Terms & Conditions
         </span>
-      </animated.div>
+      </animated.div> */}
+      <ConnectButton
+            navRef={leftNav}
+            className={`${menu ? "open-menu btn-custom-button connect-button" : ""}`}
+          />
 
       {/*       <PrimaryButton onClick={() => console.log("hi")}>MINT</PrimaryButton> */}
     </div>
