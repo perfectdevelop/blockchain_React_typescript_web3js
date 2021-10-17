@@ -1,0 +1,232 @@
+.apeintosh {
+  display: flex;
+  font-family: Days One;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: var(--dark-blue);
+  border-bottom: 5px solid var(--light-blue);
+  position: relative;
+  .homepages{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .home-titles{
+      width: 40%;
+      display: flex;
+      justify-content: end;
+      padding-bottom: 94px;
+      padding-top: 80px;
+      text-align: start;
+      .children-home-title{
+        width: 450px;
+      }
+      .firstline, .secondline{
+        font-size: 86px;
+        color: #FFD642;
+        line-height: 78px;
+      }
+      .thirdline{
+        font-family: Days One;
+        color: white;
+        font-size: 86px;
+        line-height: 78px;
+      }
+      .forthline{
+        color: white;
+        font-size: 18px;
+        line-height: 78px;
+      }
+      .stages{
+        padding: 20px 0 0;
+        display: flex;
+      }
+      .status{
+        color: white;
+        font-size: 12px;
+      }
+      .sale-status{
+        color: #FFD642;
+        font-size: 12px;
+        position: relative;
+      }
+      .sale-status::after{
+        position: absolute;
+        width: 50%;
+        height: 1.8px;
+        content: "";
+        display: block;
+        background-color: rgb(255, 0, 0);
+        transform: rotate(14deg);
+        inset: 0px 0px 0px -60%;
+        margin: auto;
+      }
+      .get-llamanow{
+        background-color: #FFD642;
+        width: 292px;
+        height: 69px;
+        font-family: Days One;
+        margin: 30px auto 0 0;
+      }
+      .get-llamanow:hover{
+        box-shadow: 0 0 20px #ffd642;
+      }
+    }
+    .home-image{
+      background-image: url('../../../../assets/images/pictures/backgrounds/home-back.png');
+      background-size: 80% auto;
+      background-repeat: no-repeat;
+      flex-grow: 1;
+      background-position: bottom left;
+    }
+  }
+
+  > svg {
+    position: absolute;
+    bottom: 3%;
+  }
+  .apeintosh-pc {
+    position: relative;
+    width: 30%;
+    z-index: 3;
+    .apeintosh-img {
+      width: 100%;
+      height: auto;
+      z-index: 2;
+    }
+    .apeintosh-content {
+      /*     height: 300px;
+            width: 378px; */
+      /*     height: 100px;
+            width: 100px; */
+      height: var(--height);
+      width: var(--width);
+      // background-color: rgba($color: #abd4ce, $alpha: 0.8);
+      position: absolute;
+      top: var(--y);
+      left: var(--x);
+      mask-image: url(../../../../assets/images/pictures/backgrounds/computer-clip.png);
+      --webkit-mask-image: url(../../../../assets/images/pictures/backgrounds/computer-clip.png);
+      mask-size: 100%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      z-index: 2;
+      h3 {
+        color: white;
+        padding: 0px 35px;
+      }
+    }
+    .ape-shadow {
+      background-color: rgba($color: black, $alpha: 1.5);
+      position: absolute;
+      width: 150%;
+      border-radius: 50%;
+      transform: translateX(-16.666%);
+      bottom: 0;
+      height: 15px;
+      z-index: -1;
+      filter: blur(5px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .apeintosh {
+    .apeintosh-pc {
+      width: 100%;
+      position: relative;
+      .apeintosh-img {
+        width: 100%;
+        z-index: 2;
+      }
+    }
+    > svg {
+      position: absolute;
+      bottom: 3%;
+      width: 8%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .homepages{
+    flex-direction: column;
+    .home-image{
+      height: 300px;
+    }
+    .home-titles{
+      width: 100% !important;
+      justify-content: center !important;
+      padding-bottom: 0 !important;
+      padding-top: 0px !important;
+      text-align: center !important;
+      .firstline, .secondline, .thirdline{
+        font-size: 50px !important;
+        line-height: 48px !important;
+      }
+      .stages{
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .apeintosh {
+    // padding: 3% 5% 18% 5%;
+    .apeintosh-pc {
+      width: 80%;
+      position: relative;
+      .apeintosh-img {
+        width: 100%;
+        z-index: 2;
+      }
+    }
+    > svg {
+      position: absolute;
+      bottom: 3%;
+      width: 8%;
+    }
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .apeintosh {
+    .apeintosh-pc {
+      width: 45%;
+      position: relative;
+      .apeintosh-img {
+        width: 100%;
+        z-index: 2;
+      }
+    }
+    > svg {
+      position: absolute;
+      bottom: 3%;
+      width: 8%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .apeintosh {
+   padding: 0 15%;
+    > svg {
+      position: absolute;
+      bottom: 3%;
+      width: 8%;
+    }
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  .apeintosh {
+    .apeintosh-pc {
+      width: 40%;
+      position: relative;
+      .apeintosh-img {
+        width: 100%;
+        z-index: 2;
+      }
+    }
+  }
+}
