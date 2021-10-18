@@ -860,10 +860,6 @@ footer .foot-links svg {
     text-transform: uppercase
 }
 
-.hp-content>div {
-    margin-bottom: 5%
-}
-
 @media (min-width:2500px) {
      :root {
         --content-radius: 160px

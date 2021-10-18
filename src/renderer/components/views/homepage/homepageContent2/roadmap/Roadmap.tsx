@@ -14,7 +14,7 @@ export default function RoadMap(): JSX.Element {
           <p className="road-map">ROADMAP</p>
           <div className="pawrap">
             <div className="pawbox pawbox1 right">
-              <p className="">Intel showing 10,000 Outlawpunks are on the run!!</p>
+              <p className="">Intel showing 10,000 MUTANT ETHER BABIES are on the run!!</p>
             </div>
             <div className="pawicon">
               <p>MEB</p>
@@ -27,12 +27,12 @@ export default function RoadMap(): JSX.Element {
               <p>MEB</p>
             </div>
             <div className="pawbox pawbox1">
-              <p className="">1 ETH giveaway for every 1000 Outlawpunk minted</p>
+              <p className="">1 ETH giveaway for every 1000 MUTANT ETHER BABIES minted</p>
             </div>
           </div>
           <div className="pawrap">
             <div className="pawbox pawbox1 right">
-              <p className="">10 Outlawpunk will be airdropped to the most active members in our community</p>
+              <p className="">10 MUTANT ETHER BABIES will be airdropped to the most active members in our community</p>
             </div>
             <div className="pawicon">
               <p>MEB</p>

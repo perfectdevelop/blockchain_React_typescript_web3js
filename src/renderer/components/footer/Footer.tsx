@@ -14,7 +14,7 @@ export default function Footer(): JSX.Element {
   return (
     <footer>
       <div className="foot-ape-logo">
-        <p className="brand">OUTLAWPUNK</p>
+        <p className="brand">MUTANT ETHER BABIES</p>
         <p className="copyright">© 2021 OUTLAWPUNK. All rights reserved</p>
       </div>
       <div className="foot-links">

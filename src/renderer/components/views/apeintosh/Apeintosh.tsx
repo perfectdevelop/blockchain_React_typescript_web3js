@@ -138,8 +138,9 @@ export default function Apeintosh(): JSX.Element {
         minHeight: '630px'
       }}
     >
+      {/* {setInterval(function() {console.log("object")}, 3000)} */}
+      {console.log("Hello")}
       <div className="homepages" style={{ display: "flex" }}>
-
         <div className="home-image">
           <div className="child-home-image">
           <div className="sub-home-image">
@@ -167,7 +168,7 @@ export default function Apeintosh(): JSX.Element {
                   >
                     ←
                   </div>
-                  <p>The Doge Pound Collections</p>
+                  <p>Mutant Ether Babies Collection</p>
                   <div
                     onClick={() => {
                       setGoToSlide(goToSlide + 1);
@@ -182,9 +183,9 @@ export default function Apeintosh(): JSX.Element {
         </div>
         <div className="home-titles">
           <div className="children-home-title">
-            <div className="firstline">OUTLAW</div>
-            <div className="secondline">PUNKS</div>
-            <div className="description">10,000 Out Law Punk is on the run on Ethereum Chain.. </div>
+            <div className="firstline">MUTANT ETHER</div>
+            <div className="secondline">BABIES NFT</div>
+            <div className="description">10,000 Out MUTANT ETHER BABIES are on the run on Ethereum Chain.. </div>
             <div className="social-links">
               <a href="#" className="">
                 <div className="parent-icons">
@@ -215,8 +216,8 @@ export default function Apeintosh(): JSX.Element {
                 </ul>
               </div>
             </div>
-            <div className="forthline">NFT Collection & Mobile app</div>
-            <button className="get-llamanow btn-custom-button">Get Llama Now</button>
+            <div className="forthline">NFT collection Game - Metaverse</div>
+            <button className="get-llamanow btn-custom-button">Mint Your Mebs</button>
             <div className="stages">
               <span className="sale-status">Epoch1: SOLD OUT</span>&nbsp;&nbsp;
               <span className="status">Epoch2: AVAIABLE</span>

@@ -12,10 +12,10 @@ export default function HomePageContent(): JSX.Element {
     <div className="hp-content">
       <About />
       <RoadMap />
-      <Divider />
-      <TraitRatity />
-      <Divider />
-      <Faqs />
+      {/* <Divider /> */}
+      {/* <TraitRatity />
+      <Divider /> */}
+      {/* <Faqs /> */}
       <Team />
     </div>
   );

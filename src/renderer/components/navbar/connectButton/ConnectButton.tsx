@@ -41,17 +41,17 @@ export default function ConnectButton({
       // })} */
         onClick={() => {
 
-          if (!metaState.isConnected) {
-            setOpen(!open);
-          } else if (wallet && wallet!.publicKey) {
-            navigator.clipboard.writeText(wallet!.publicKey.toBase58());
-            setGlobalData({
-              type: "SET_GLOBAL_DATA",
-              arg: {
-                wallet,
-              },
-            });
-          }
+          // if (!metaState.isConnected) {
+          //   setOpen(!open);
+          // } else if (wallet && wallet!.publicKey) {
+          //   navigator.clipboard.writeText(wallet!.publicKey.toBase58());
+          //   setGlobalData({
+          //     type: "SET_GLOBAL_DATA",
+          //     arg: {
+          //       wallet,
+          //     },
+          //   });
+          // }
         }}
       >
         {/* {connected && wallet && wallet!.publicKey
@@ -63,7 +63,7 @@ export default function ConnectButton({
           : "Connect Wallet"} */}
         { metaState.isAvailable && metaState.isConnected
           ? `${metaState.account[0]}`.toString().substring(2, 9) + '...' + `${metaState.account[0]}`.toString().substring(`${metaState.account[0]}`.toString().length - 6)
-          : "Get Llama"}
+          : "Mint MEB"}
       </PrimaryButton>
       <div className={`nc-dropdown `}>
         <WalletList />

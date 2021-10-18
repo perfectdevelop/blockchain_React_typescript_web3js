@@ -10,7 +10,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 0 15%;
+    padding: 0 7%;
     .home-titles{
       width: 50%;
       display: flex;
@@ -20,12 +20,13 @@
       padding-top: 80px;
       text-align: start;
       .children-home-title{
-        width: 450px;
+        width: 100%;
         text-align: center;
       }
       .firstline, .secondline{
-        font-size: 80px;
+        font-size: 75px;
         color: white;
+        letter-spacing: -0.5px;
         line-height: 78px;
         padding-bottom: 50px;
         -webkit-animation: vertical 3s ease-in-out infinite;
@@ -122,14 +123,14 @@
         margin: auto;
       }
       .get-llamanow{
-        background-color: #FFD642;
+        background-color: #4dffe6;
         width: 292px;
         height: 69px;
         font-family: Days One;
         margin: 30px auto 0 0;
       }
       .get-llamanow:hover{
-        box-shadow: 0 0 20px #ffd642;
+        box-shadow: 0 0 20px #4dffe6;
       }
     }
     .home-image{
