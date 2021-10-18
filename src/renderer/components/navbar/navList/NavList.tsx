@@ -90,9 +90,22 @@ export default function NavList({
         </span>
       </animated.div>
       <animated.div style={trail[4]}>
-        <Link to="/rarities">Roadmap</Link>
+        <span
+          onClick={async () => {
+            if (history.location.pathname !== "/") {
+              await history.push("/");
+            }
+            scrollIntoViewCalc("roadmap");
+          }}
+        >
+          Roadmap
+        </span>
       </animated.div>
-      {/* <animated.div style={trail[5]}>
+      {/* <animated.div style={trail[4]}>
+        {/* <Link to="/rarities">Roadmap</Link>
+        <Link to="/">Roadmap</Link>
+      </animated.div> 
+      /* <animated.div style={trail[5]}>
         <span
           onClick={async () => {
             if (history.location.pathname !== "/") {

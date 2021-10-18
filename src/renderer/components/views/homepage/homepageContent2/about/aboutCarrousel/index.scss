@@ -1,13 +1,15 @@
 .a-carrousel {
   position: relative;
+  width: 75%;
+  margin: 0 auto;
   .swiper-button-prev,
   .swiper-button-next {
     color: white;
   }
 
   .parent-a-carrousel{
-    width: 400px !important;
-    padding: 20px;
+    width: 255px !important;
+    padding: 15px;
   }
   .a-carrousel-img {
     img {

@@ -54,9 +54,10 @@
       text-align: left;
     }
     .road-map{
-      font-size: 50px;
-      font-weight: 700;
+      font-size: 55px;
+      font-weight: 800;
       text-align: center;
+      font-family: "Poppins",sans-serif !important;
     }
     .pawrap{
       position: relative;
@@ -87,7 +88,7 @@
       }
       .pawbox1{
         position: relative;
-        width: 514px;
+        width: 44%;
       }
       
       .pawicon{
@@ -105,8 +106,9 @@
         position: absolute;
         left: 0;
         right: 0;
-        img{
-          max-width: 52%;
+        p{
+          font-size: 20px;
+          font-weight: 600;
         }
       }
     }
@@ -145,9 +147,6 @@
     margin-top: 20%;
     .hp-rm-content {
       width: 90%;
-      p {
-        font-size: 13px !important;
-      }
     }
     > svg {
       height: 25%;
@@ -189,7 +188,6 @@
     font-size: 40px;
   }
   #roadmap p {
-    font-size: 25px;
   }
   .hp-rm-content {
     width: 100% !important;

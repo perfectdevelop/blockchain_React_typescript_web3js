@@ -9,6 +9,8 @@ import { useMediaQuery } from "react-responsive";
 import ConnectButton from "./connectButton/ConnectButton";
 import { useHistory } from "react-router-dom";
 
+import { scrollIntoViewCalc } from "../../../utils/scrollIntoView";
+
 import Logo from "../../../assets/images/pictures/logos/logo.png";
 import { ReactComponent as ApeMenu } from "../../../assets/images/icons/menu-ape-logo.svg";
 // import { ReactComponent as Discord } from '../../../assets/images/pictures/social/discord.svg';
@@ -19,6 +21,8 @@ import Opensea from '../../../assets/images/pictures/social/opensea.png';
 import Discord from '../../../assets/images/pictures/social/discord.png';
 import Instagram from '../../../assets/images/pictures/social/instagram.png';
 import Twitter from '../../../assets/images/pictures/social/twitter.png';
+import { animated } from "@react-spring/web";
+import { useTrail } from "@react-spring/core";
 
 export default function Navbar(): JSX.Element {
   const history = useHistory();
@@ -57,7 +61,7 @@ export default function Navbar(): JSX.Element {
         <a href="#" className="about">About</a>
         <a href="#" className="about">Collection</a>
         <a href="#" className="about">Mobile app</a>
-        <a href="#" className="about">Roadmap</a>
+        <a href="#roadmap" className="about">Roadmap</a>
       </div>
       {/* <img
         onClick={() => history.push("/")}
