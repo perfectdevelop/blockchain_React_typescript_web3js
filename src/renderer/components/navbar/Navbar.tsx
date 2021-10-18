@@ -67,7 +67,7 @@ export default function Navbar(): JSX.Element {
       /> */}
       <div className="left-nav-main">
         <div className="left-nav" ref={leftNav}>
-          <div className="socials">
+          {/* <div className="socials">
             <a href="#" className="">
             <div className="parent-icons">
               <img src={Opensea} alt="opensea" className="" />
@@ -88,7 +88,7 @@ export default function Navbar(): JSX.Element {
               <img src={Instagram} alt="instagram" className="" />
               </div>
             </a>
-          </div>
+          </div> */}
           <ConnectButton
             navRef={leftNav}
             className={`${menu ? "open-menu btn-custom-button connect-button" : ""}`}

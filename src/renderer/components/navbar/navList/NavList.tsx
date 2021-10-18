@@ -104,23 +104,23 @@ export default function NavList({
           Faq
         </span>
       </animated.div> */}
-      <br />
+      {/* <br />
       <animated.div className="nav-social" style={trail[6]}>
         <a
           href="https://twitter.com/degenapeacademy"
           target="_blank"
           rel="noreferrer"
-        >
+        > */}
           {/* <Twitter /> */}
-        </a>
+        {/* </a>
         <a
           href="http://discord.gg/degenapeacademy"
           target="_blank"
           rel="noreferrer"
-        >
+        > */}
           {/* <Discord /> */}
-        </a>
-      </animated.div>
+        {/* </a>
+      </animated.div> */}
       {/* <animated.div style={trail[7]}>
         <span
           className="nl-terms"
@@ -139,9 +139,30 @@ export default function NavList({
       </animated.div> */}
       <ConnectButton
             navRef={leftNav}
-            className={`${menu ? "open-menu btn-custom-button connect-button" : ""}`}
+            className={`${menu ? "open-menu btn-custom-button connect-button mobile-menu" : ""}`}
           />
-
+    <div className="socials mobile-header-items">
+            <a href="#" className="">
+            <div className="parent-icons">
+              <img src={Opensea} alt="opensea" className="" />
+              </div>
+            </a>
+            <a href="#" className="">
+              <div className="parent-icons">
+                <img src={Discord} alt="discord" className="" />
+              </div>
+            </a>
+            <a href="#" className="">
+            <div className="parent-icons">
+              <img src={Twitter} alt="twitter" className="" />
+              </div>
+            </a>
+            <a href="#" className="">
+            <div className="parent-icons">
+              <img src={Instagram} alt="instagram" className="" />
+              </div>
+            </a>
+          </div>
       {/*       <PrimaryButton onClick={() => console.log("hi")}>MINT</PrimaryButton> */}
     </div>
   );

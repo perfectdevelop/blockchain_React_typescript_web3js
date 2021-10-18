@@ -1,37 +1,40 @@
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   position: relative;
-  min-height: 300px;
-  padding: 2% 10%;
+  min-height: 150px;
+  padding: 60px 10%;
   width: 100%;
-
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
 
   .foot-ape-logo {
     text-align: center;
-    color: white;
-
+    color: white; 
     font-family: var(--content-font), sans-serif;
-    display: flex;
-    justify-content: center;
+
     flex-direction: column;
     align-items: center;
-    svg {
-      width: 200px;
+    .brand{
+      font-size: 45px;
+      margin: 0;
+      font-weight: 900;
+      color: white;
+    }
+    .copyright{
+      margin-bottom: 0;
     }
   }
 
   .foot-links {
-    margin-top: 3%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    svg {
-      width: 50px;
-      height: auto;
+    justify-content: space-evenly;
+    width: 350px;
+    .social-links{
+      img{
+        width: 50px;
+      }
     }
   }
 }

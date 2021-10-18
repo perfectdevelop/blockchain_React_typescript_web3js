@@ -5,17 +5,20 @@ export default function TeamMember({
   name,
   role,
   ape,
+  description
 }: {
   name: string;
   role: string;
   ape: string;
+  description: string;
 }): JSX.Element {
   return (
     <div className="hp-tm">
       <img src={ape} alt={name} />
       <div className="hp-tm-l">
-        <h2>@{name}</h2>
-        <p>{role}</p>
+        <p className="team-name">{name}</p>
+        <p className="team-role">{role}</p>
+        <p className="team-description">{description}</p>
       </div>
     </div>
   );
