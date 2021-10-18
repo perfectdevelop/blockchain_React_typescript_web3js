@@ -7,7 +7,7 @@ import useReduxState from "../../../hooks/useReduxState";
 import { useMediaQuery } from "react-responsive";
 import ApesRemaining from "./apesRemaining/ApesRemaining";
 import Carousel from "react-spring-3d-carousel";
-import uuidv4 from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
 /*eslint-disable react-hooks/exhaustive-deps */
 
@@ -32,6 +32,7 @@ export default function Apeintosh(): JSX.Element {
 
   const [goToSlide, setGoToSlide] = useState(0);
   const [offsetRadius, setOffsetRadius] = useState(2);
+  const [showArrows, setShowArrows] = useState(false);
   const [showNavigation, setShowNavigation] = useState(true)
 
   const [status, setStatus] = useState('start');
@@ -147,6 +148,7 @@ export default function Apeintosh(): JSX.Element {
               <Carousel
                 slides={slides}
                 goToSlide={goToSlide}
+                showNavigation={showArrows}
                 offsetRadius={offsetRadius}
                 animationConfig={configs}
               />
