@@ -6,7 +6,8 @@ footer {
   min-height: 150px;
   padding: 60px 10%;
   width: 100%;
-  background-color: var(--dark-blue);
+  // background-color: var(--dark-blue);
+  background-color: #191720;
 
   .foot-ape-logo {
     text-align: center;
@@ -33,7 +34,7 @@ footer {
     width: 350px;
     .social-links{
       img{
-        width: 50px;
+        width: 30px;
       }
     }
   }

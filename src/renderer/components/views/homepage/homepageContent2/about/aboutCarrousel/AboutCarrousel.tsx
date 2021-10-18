@@ -4,6 +4,7 @@ import SwiperCore, { Navigation, Autoplay } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useMediaQuery } from "react-responsive";
+import Marquee from "react-fast-marquee";
 
 import ape1 from "../../../../../../../assets/images/tokens/1.jpg";
 import ape2 from "../../../../../../../assets/images/tokens/2.jpg";
@@ -39,13 +40,15 @@ export default function AboutCarrousel(): JSX.Element {
         autoplay={true}
         loop={true}
       >
+        <Marquee gradient={false} speed={70} >
         {apesimg.map((img, index) => (
-          <SwiperSlide key={index} className="parent-a-carrousel">
+          <div key={index} className="parent-a-carrousel" >
             <div className="a-carrousel-img">
               <img src={img} alt={`${index}`} />
             </div>
-          </SwiperSlide>
+          </div>
         ))}
+        </Marquee>
       </Swiper>
     </div>
   );

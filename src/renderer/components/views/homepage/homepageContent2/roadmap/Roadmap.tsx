@@ -4,37 +4,73 @@ import RoadmapList from "./roadmapList/RoadmapList";
 
 import { ReactComponent as Banana } from "../../../../../../assets/images/pictures/backgrounds/banana.svg";
 // import banana from "../../../../../../assets/images/pictures/backgrounds/banana.svg";
+import Facebone from '../../../../../../assets/images/pictures/icons/facebone.png';
 
 export default function RoadMap(): JSX.Element {
   return (
     <>
       <div id="roadmap" className="hp-roadmap" data-aos="fade-up">
         <div className="hp-rm-content">
-          <h1>Utility & Roadmap</h1>
-          <p>
-            Minting a Degenerate Ape acts as your enrollment to the most
-            prestigious Academy apes have ever built. While you’re a student,
-            you will have access to all that the academy has to offer currently,
-            and in the future.
-          </p>
-          <p>
-            Access to the academy means more than just bragging rights to those
-            uneducated, less sophisticated apes. We have made it our goal to
-            make sure utility is always offered to all our students. This
-            utility will be modest at first but will expand over time as we
-            continue to build.
-          </p>
-          <p>
-            We are building the academy not just for you, but also with you.
-            Listed below is our roadmap for the near and distant future.
-          </p>
-          <p>We hope you have your crayons ready.</p>
+          <p className="road-map">ROADMAP</p>
+          <div className="pawrap">
+            <div className="pawbox pawbox1 right">
+              <p className="">Intel showing 10,000 Outlawpunks are on the run!!</p>
+            </div>
+            <div className="pawicon">
+              <img src={Facebone} alt="facebone" className="" />
+            </div>
+            <span>0%</span>
+          </div>
+          <div className="pawrap pawrap2">
+            <span>10%</span>
+            <div className="pawicon">
+              <img src={Facebone} alt="facebone" className="" />
+            </div>
+            <div className="pawbox pawbox1">
+              <p className="">1 ETH giveaway for every 1000 Outlawpunk minted</p>
+            </div>
+          </div>
+          <div className="pawrap">
+            <div className="pawbox pawbox1 right">
+              <p className="">10 Outlawpunk will be airdropped to the most active members in our community</p>
+            </div>
+            <div className="pawicon">
+              <img src={Facebone} alt="facebone" className="" />
+            </div>
+            <span>25%</span>
+          </div>
+          <div className="pawrap pawrap2">
+            <span>50%</span>
+            <div className="pawicon">
+              <img src={Facebone} alt="facebone" className="" />
+            </div>
+            <div className="pawbox pawbox1">
+              <p className="">Another big influencer will be onboard!</p>
+            </div>
+          </div>
+          <div className="pawrap">
+            <div className="pawbox pawbox1 right">
+              <p className="">Donation to a charity based on community choice</p>
+            </div>
+            <div className="pawicon">
+              <img src={Facebone} alt="facebone" className="" />
+            </div>
+            <span>75%</span>
+          </div>
+          <div className="pawrap pawrap2">
+            <span>100%</span>
+            <div className="pawicon">
+              <img src={Facebone} alt="facebone" className="" />
+            </div>
+            <div className="pawbox pawbox1">
+              <p className="">A lucky draw for a tesla car, a Rolex, and 3 ETH for 3 lucky communtity member</p>
+            </div>
+          </div>
         </div>
-        <Banana id="banana" />
         {/* <img src={banana} alt="logo"/> */}
 
       </div>
-      <RoadmapList />
+      {/* <RoadmapList /> */}
     </>
   );
 }
