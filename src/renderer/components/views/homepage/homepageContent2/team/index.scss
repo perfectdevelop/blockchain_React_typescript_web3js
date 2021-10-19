@@ -7,7 +7,6 @@
   width: inherit;
   text-align: center;
   margin-bottom: 0 !important;
-
   h1 {
     font-size: 130px;
     margin: 0;
@@ -36,6 +35,9 @@
     background-size: cover;
     background-position: center;
     text-align: center;
+    .team{
+      font-size: 35px !important;
+    }
     h1 {
       font-size: 100px;
     }

@@ -9,6 +9,7 @@
   width: 50%;
   padding: 0 8% 0 8%;
   overflow: hidden;
+  background-color: var(--dark-blue);
   .my-apes {
     height: 15%;
     width: 100%;
@@ -131,6 +132,7 @@
       display: block;
       margin-right: 0;
       height: 50px;
+      margin-top: 60px;
       button{
         width: 70%;
         height: 100%;
@@ -139,7 +141,9 @@
     .mobile-header-items{
       display: flex !important;
       width: 55%;
-      justify-content: space-around;
+      margin-top: 30px;
+      justify-content: center;
+      gap: 50px;
       img{
         width: 34px;
         height: 34px;

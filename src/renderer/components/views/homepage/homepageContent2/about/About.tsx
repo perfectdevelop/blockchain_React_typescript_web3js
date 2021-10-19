@@ -19,10 +19,10 @@ export default function About(): JSX.Element {
   });
   return (
     <>
-      <p className="about-title">ABOUT</p>
+      <p id="about-title" className="about-title">ABOUT</p>
       <div id="about" className="hp-about" data-aos="fade-up">
         <div className="hp-a-content">
-          <p className="sub-title">10,000 OUTLAWPUNK IS ON THE RUN!</p>
+          <p className="sub-title">10,000 MUTANT ETHER BABIES ARE ON THE RUN!</p>
           <p>
             If you see them please catch them as they are ruthless, mean and cruel. Some of their crimes include:
           </p>

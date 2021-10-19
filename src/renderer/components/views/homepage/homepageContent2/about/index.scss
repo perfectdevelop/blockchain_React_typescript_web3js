@@ -25,9 +25,8 @@
     }
     .hp-a-content {
         width: 60%;
-        padding-top: 70px;
         .sub-title{
-            font-size: 30px;
+            font-size: 28px !important;
             font-weight: 700;
         }
         .about{
@@ -43,7 +42,7 @@
         p {
             font-family: var(--content-font);
             margin-top: 0;
-            font-size: 18px !important;
+            font-size: 20px !important;
             &:last-child {
                 margin: 0;
             }
@@ -64,6 +63,9 @@
 }
 
 @media (max-width: 576px) {
+    .about-title{
+        font-size: 35px !important;
+    }
     .hp-about {
         display: flex;
         justify-content: center;

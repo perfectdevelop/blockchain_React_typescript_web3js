@@ -59,7 +59,7 @@ export default function NavList({
             if (history.location.pathname !== "/") {
               await history.push("/");
             }
-            scrollIntoViewCalc("about");
+            scrollIntoViewCalc("about-title");
           }}
         >
           About
@@ -71,7 +71,7 @@ export default function NavList({
             if (history.location.pathname !== "/") {
               await history.push("/");
             }
-            scrollIntoViewCalc("roadmap");
+            scrollIntoViewCalc("collections");
           }}
         >
           Collections
@@ -86,7 +86,7 @@ export default function NavList({
             scrollIntoViewCalc("traits");
           }}
         >
-          Mobile app
+          Gaming Metaverse
         </span>
       </animated.div>
       <animated.div style={trail[4]}>
@@ -155,11 +155,11 @@ export default function NavList({
             className={`${menu ? "open-menu btn-custom-button connect-button mobile-menu" : ""}`}
           />
     <div className="socials mobile-header-items">
-            <a href="#" className="">
+            {/* <a href="#" className="">
             <div className="parent-icons">
               <img src={Opensea} alt="opensea" className="" />
               </div>
-            </a>
+            </a> */}
             <a href="#" className="">
               <div className="parent-icons">
                 <img src={Discord} alt="discord" className="" />
@@ -170,11 +170,11 @@ export default function NavList({
               <img src={Twitter} alt="twitter" className="" />
               </div>
             </a>
-            <a href="#" className="">
+            {/* <a href="#" className="">
             <div className="parent-icons">
               <img src={Instagram} alt="instagram" className="" />
               </div>
-            </a>
+            </a> */}
           </div>
       {/*       <PrimaryButton onClick={() => console.log("hi")}>MINT</PrimaryButton> */}
     </div>

@@ -181,6 +181,18 @@
 }
 
 @media (max-width: 992px) {
+  .pawbox1{
+    width: 100% !important;
+  }
+  .pawbox1::before{
+    display: none !important;
+  }
+  .pawbox1::after{
+    display: none !important;
+  }
+  .pawicon{
+    display: none !important;
+  }
   #roadmap {
     padding: 20px 15px;
   }
@@ -191,6 +203,10 @@
   }
   .hp-rm-content {
     width: 100% !important;
+    .road-map{
+      font-size: 35px !important;
+     
+    }
   }
 
   .hp-roadmap #banana {

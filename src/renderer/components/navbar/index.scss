@@ -169,6 +169,7 @@
   .navbar {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 0 10px;
     svg {
       width: 80px;
     }
@@ -180,6 +181,9 @@
 }
 
 @media (max-width: 992px) {
+  .navbar{
+    padding: 0 10px !important;
+  }
   .open-menu {
     transform: translateX(-90%);
   }

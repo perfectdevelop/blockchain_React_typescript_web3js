@@ -247,7 +247,7 @@ body {
     .navbar {
         display: grid;
         grid-template-columns: 40% 60%!important;
-        padding: 5% 10% 0
+        padding: 0 10px !important;
     }
     .navbar svg {
         width: 80px

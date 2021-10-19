@@ -33,7 +33,7 @@ export default function AboutCarrousel(): JSX.Element {
     query: "(max-width:992px)",
   });
   return (
-    <div className="a-carrousel">
+    <div className="a-carrousel" id="collections">
       <Swiper
         slidesPerView={isMobile ? 1 : 3}
         spaceBetween={30}
