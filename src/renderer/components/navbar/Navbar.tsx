@@ -60,15 +60,21 @@ export default function Navbar(): JSX.Element {
       <div className="header-items">
         <a href="#" className="about">About</a>
         <a href="#" className="about">Collection</a>
-        <a href="#" className="about">Mobile app</a>
+        <a href="#" className="about">Gaming Metaverse</a>
         <a href="#roadmap" className="about">Roadmap</a>
       </div>
+      {/* <div className="logo-letters">
+        <p>Mutant Ether Babies</p>
+      </div> */}
       {/* <img
         onClick={() => history.push("/")}
         style={isMobile ? {} : { zIndex: 2000, cursor: "pointer", width: "111px", height: "59px" }}
         src={Logo}
         alt="logo"
       /> */}
+       {/* <div className="main-logo">
+        <p>Mutant Ether Babies</p>
+      </div> */}
       <div className="left-nav-main">
         <div className="left-nav" ref={leftNav}>
           {/* <div className="socials">
@@ -122,9 +128,10 @@ export default function Navbar(): JSX.Element {
           />
         </SwipeableDrawer>
       </div>
-      <a href="#" className="main-logo">
-        <img src={Logo} alt="logo" className="main-logo-image"/>
-      </a>
+      <div className="main-logo">
+        <p>Mutant Ether Babies</p>
+      </div>
+     
       </div>
     </div>
   );

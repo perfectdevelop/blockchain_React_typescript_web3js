@@ -5,7 +5,7 @@ footer {
   align-items: center;
   position: relative;
   min-height: 150px;
-  padding: 60px 20%;
+  padding: 60px 7%;
   font-family: "Poppins",sans-serif !important;
   width: 100%;
   // background-color: var(--dark-blue);
@@ -60,9 +60,12 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 0 10%;
+    padding: 0 10% 30px;
     flex-direction: column;
     gap: 50px;
+    .brand{
+      font-size: 25px !important;
+    }
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {

@@ -9,6 +9,7 @@ import ApesRemaining from "./apesRemaining/ApesRemaining";
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
+import moment from 'moment'
 /*eslint-disable react-hooks/exhaustive-deps */
 
 import ApeintoshImg from "../../../../assets/images/pictures/backgrounds/pc-off.png";
@@ -27,16 +28,18 @@ import Image5 from '../../../../assets/images/tokens/5.jpg'
 import Image6 from '../../../../assets/images/tokens/6.jpg'
 import Image7 from '../../../../assets/images/tokens/7.jpg'
 import Image8 from '../../../../assets/images/tokens/8.jpg'
-import { AddShoppingCart } from '@material-ui/icons';
+import { AddShoppingCart, SettingsInputComponentSharp } from '@material-ui/icons';
+import { useAppSelector } from 'src/renderer/redux/stores/store';
 
 
 export default function Apeintosh(): JSX.Element {
 
   const [goToSlide, setGoToSlide] = useState(0);
   const [offsetRadius, setOffsetRadius] = useState(2);
-  const [timer, setTimer] = useState(0);
+  
   const [showArrows, setShowArrows] = useState(false);
-  const [showNavigation, setShowNavigation] = useState(true)
+  const [showNavigation, setShowNavigation] = useState(true);
+  
 
   const [status, setStatus] = useState('start');
 
@@ -143,6 +146,60 @@ export default function Apeintosh(): JSX.Element {
     handleResize();
   }, [loading]);
 
+  // const current = () => {
+  //   let now = new Date();
+ 
+  //   var dateString = moment(now).format('YYYY-MM-DD');
+  //   console.log(dateString) // Output: 2020-07-21
+    
+  //   var dateStringWithTime = moment(now).format('YYYY-MM-DD HH:MM:SS');
+  //   console.log(dateStringWithTime)
+  //   return (
+  //     <p>{dateStringWithTime}</p>
+  //   )
+  // }
+  
+  const [date, setDate] = useState(new Date().getHours());
+  const [year, setYear] = useState(new Date().getFullYear());
+  const [month, setMonth] = useState(new Date().getMonth());
+  const [day, setDay] = useState(new Date().getDate());
+
+  useEffect(() => {
+    var timerID = setInterval( () => tick(), 1000 );
+    return function cleanup() {
+        clearInterval(timerID);
+      };
+   });
+
+  useEffect(() => {
+    var timerID = setInterval( () => plus(), 2000 );
+    return function cleanup() {
+        clearInterval(timerID);
+      };
+   });
+
+   function tick() {
+    setDate(new Date().getHours());
+    setYear(new Date().getFullYear());
+    setMonth(new Date().getMonth());
+    setDay(new Date().getDate());
+   }
+
+   function plus() {
+    setGoToSlide(goToSlide + 1);
+   }
+
+   const monthNames = ["January", "February", "March", "April", "May", "June",
+   "July", "August", "September", "October", "November", "December"
+    ];
+
+  const converter = (hours:number) => {
+    if(hours > 12){
+      return hours - 12 + " P.M. EST Time";
+    }else if(hours < 12){
+      return hours + " A.M. EST Time";
+    }
+  }
   return (
     <div
       className="apeintosh"
@@ -151,7 +208,7 @@ export default function Apeintosh(): JSX.Element {
       }}
     >
       {/* {setInterval(function() {console.log("object")}, 3000)} */}
-      {console.log("Hello")}
+      {/* {console.log("Hello")} */}
       <div className="homepages" style={{ display: "flex" }}>
         <div className="home-image">
           <div className="child-home-image" >
@@ -198,9 +255,8 @@ export default function Apeintosh(): JSX.Element {
         </div>
         <div className="home-titles">
           <div className="children-home-title">
-            <div className="firstline">MUTANT ETHER</div>
-            <div className="secondline">BABIES NFT</div>
-            <div>{timer}</div>
+            <div className="firstline">MUTANT ETHER BABIES NFT</div>
+            {/* <div>{timer}</div> */}
             <div className="description">10,000 Out MUTANT ETHER BABIES are on the run on Ethereum Chain.. </div>
             <div className="social-links">
               <a href="#" className="">
@@ -214,8 +270,9 @@ export default function Apeintosh(): JSX.Element {
                 </div>
               </a>
             </div>
-            <div className="timewrap">
-              <div className="count-down">
+            <div className="timewrap" style={{color:'white'}}>
+              <p>{monthNames[month]} {day} date {converter(date)}</p>
+              {/* <div className="count-down">
                 <ul>
                   <li className="first">
                     <span className="days">00</span><br /><span className="date-time">DAYS</span>
@@ -230,13 +287,13 @@ export default function Apeintosh(): JSX.Element {
                     <span className="seconds">00</span><br /><span className="date-time">SECONDS</span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
+              <div className="current-time">{}</div>
             </div>
             <div className="forthline">NFT collection Game - Metaverse</div>
             <button className="get-llamanow btn-custom-button">Mint Your Mebs</button>
             <div className="stages">
-              <span className="sale-status">Epoch1: SOLD OUT</span>&nbsp;&nbsp;
-              <span className="status">Epoch2: AVAIABLE</span>
+             <p className="">Minted Mebs</p>
             </div>
           </div>
         </div>

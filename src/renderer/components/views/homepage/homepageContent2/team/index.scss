@@ -19,7 +19,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     .hp-tm{
       img{
-        width: 78%;
+        width: 250px;
       }
     }
     
@@ -46,8 +46,6 @@
       align-items: center;
       justify-items: start;
       gap: 40px;
-
-      padding: 0 10% 15% 10%;
     }
   }
 }
