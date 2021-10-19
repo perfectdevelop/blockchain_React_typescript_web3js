@@ -9,7 +9,6 @@ import ApesRemaining from "./apesRemaining/ApesRemaining";
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-import moment from 'moment'
 /*eslint-disable react-hooks/exhaustive-deps */
 
 import ApeintoshImg from "../../../../assets/images/pictures/backgrounds/pc-off.png";
