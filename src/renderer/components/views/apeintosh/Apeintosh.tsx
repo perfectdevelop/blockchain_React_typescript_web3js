@@ -27,16 +27,20 @@ import Image5 from '../../../../assets/images/tokens/5.jpg'
 import Image6 from '../../../../assets/images/tokens/6.jpg'
 import Image7 from '../../../../assets/images/tokens/7.jpg'
 import Image8 from '../../../../assets/images/tokens/8.jpg'
+import { AddShoppingCart } from '@material-ui/icons';
+
 
 export default function Apeintosh(): JSX.Element {
 
   const [goToSlide, setGoToSlide] = useState(0);
   const [offsetRadius, setOffsetRadius] = useState(2);
+  const [timer, setTimer] = useState(0);
   const [showArrows, setShowArrows] = useState(false);
   const [showNavigation, setShowNavigation] = useState(true)
 
   const [status, setStatus] = useState('start');
 
+  
   // const [config, setConfig] = useState(config.gentle);
   const configs = config.gentle;
 
@@ -97,9 +101,17 @@ export default function Apeintosh(): JSX.Element {
   });
 
   useEffect(() => {
+    // setInterval(function() {console.log("object")}, 3000);
     window.addEventListener("resize", handleResize);
     handleResize();
   }, []);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setGoToSlide(goToSlide + 1);
+  //   }, 1000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   useDidUpdateEffect(() => {
     if (wallet) {
@@ -142,19 +154,22 @@ export default function Apeintosh(): JSX.Element {
       {console.log("Hello")}
       <div className="homepages" style={{ display: "flex" }}>
         <div className="home-image">
-          <div className="child-home-image">
-          <div className="sub-home-image">
-            <div className="carousel-border"></div>
-            <div style={{ width: "50%", height: "400px", margin: "0 auto" }} className="parent-carousel">
-              <Carousel
-                slides={slides}
-                goToSlide={goToSlide}
-                showNavigation={showArrows}
-                offsetRadius={offsetRadius}
-                animationConfig={configs}
-              />
-            </div>
-            <div
+          <div className="child-home-image" >
+            <div className="sub-home-image" >
+              <div className="carousel-border"></div>
+              <div style={{ width: "50%", height: "400px", margin: "0 auto" }} className="parent-carousel">
+                {slides.length > 0 ? (
+                  <Carousel
+                    slides={slides}
+                    goToSlide={goToSlide}
+                    showNavigation={showArrows}
+                    offsetRadius={offsetRadius}
+                    animationConfig={configs}
+                  />
+                ) : null}
+
+              </div>
+              <div
                 style={{
                   margin: "0 auto",
                   marginTop: "2rem",
@@ -177,14 +192,15 @@ export default function Apeintosh(): JSX.Element {
                     →
                   </div>
                 </div>
-              </div>  
-          </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="home-titles">
           <div className="children-home-title">
             <div className="firstline">MUTANT ETHER</div>
             <div className="secondline">BABIES NFT</div>
+            <div>{timer}</div>
             <div className="description">10,000 Out MUTANT ETHER BABIES are on the run on Ethereum Chain.. </div>
             <div className="social-links">
               <a href="#" className="">

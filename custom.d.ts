@@ -8,5 +8,8 @@
 declare module 'use-metamask'{
   export declare const useMetamask: any;
 }
+declare module '3d-react-carousal'{
+  export declare const Carousel: any;
+}
 
   // add a new declaration (.d.ts) file containing `declare module 'use-metamask';
