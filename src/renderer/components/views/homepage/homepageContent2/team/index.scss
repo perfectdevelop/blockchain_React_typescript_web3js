@@ -1,7 +1,7 @@
 .team{
   font-size: 55px;
   font-weight: 800;
-  font-family: "Poppins",sans-serif !important;
+  font-family: Days One !important;
 }
 .hp-team {
   width: inherit;
@@ -13,12 +13,16 @@
   }
   .hp-team-list {
     display: grid;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     .hp-tm{
       img{
         width: 250px;
+        border: 15px solid gray;
+      }
+      .hp-tm-l{
+        width: 80%;
       }
     }
     
@@ -30,7 +34,6 @@
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -12.5%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

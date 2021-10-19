@@ -50,7 +50,8 @@ export default function NavList({
           /* to={connected ? "/my-apes" : "/"} */
           //style={connected ? { color: "white" } : { color: "#2c253e" }}
         >
-         <img src={Logo} alt="" className="hamburger-logo" />
+         {/* <img src={Logo} alt="" className="hamburger-logo" /> */}
+         <p>Mutant Ether Babies</p>
         </Link>
       </animated.div>
       <animated.div style={trail[1]}>
@@ -154,13 +155,13 @@ export default function NavList({
             navRef={leftNav}
             className={`${menu ? "open-menu btn-custom-button connect-button mobile-menu" : ""}`}
           />
-    <div className="socials mobile-header-items">
+    {/* <div className="socials mobile-header-items"> */}
             {/* <a href="#" className="">
             <div className="parent-icons">
               <img src={Opensea} alt="opensea" className="" />
               </div>
             </a> */}
-            <a href="#" className="">
+            {/* <a href="#" className="">
               <div className="parent-icons">
                 <img src={Discord} alt="discord" className="" />
               </div>
@@ -169,13 +170,13 @@ export default function NavList({
             <div className="parent-icons">
               <img src={Twitter} alt="twitter" className="" />
               </div>
-            </a>
+            </a> */}
             {/* <a href="#" className="">
             <div className="parent-icons">
               <img src={Instagram} alt="instagram" className="" />
               </div>
             </a> */}
-          </div>
+          {/* </div> */}
       {/*       <PrimaryButton onClick={() => console.log("hi")}>MINT</PrimaryButton> */}
     </div>
   );

@@ -257,18 +257,7 @@ export default function Apeintosh(): JSX.Element {
             <div className="firstline">MUTANT ETHER BABIES NFT</div>
             {/* <div>{timer}</div> */}
             <div className="description">10,000 Out MUTANT ETHER BABIES are on the run on Ethereum Chain.. </div>
-            <div className="social-links">
-              <a href="#" className="">
-                <div className="parent-icons">
-                  <img src={Discord} alt="discord" className="" />
-                </div>
-              </a>
-              <a href="#" className="">
-                <div className="parent-icons">
-                  <img src={Twitter} alt="twitter" className="" />
-                </div>
-              </a>
-            </div>
+           
             <div className="timewrap" style={{color:'white'}}>
               <p>{monthNames[month]} {day} date {converter(date)}</p>
               {/* <div className="count-down">

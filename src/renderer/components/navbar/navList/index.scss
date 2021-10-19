@@ -17,18 +17,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     color: #2c253e;
 
     a {
       margin: 0;
-      color: #2c253e;
+      color: white;
       font-weight: 900;
       letter-spacing: normal;
-      > div {
+      > p {
         font-family: Days One;
-        color: #2c253e;
-        font-size: 15px;
+        color: White;
+        font-size: 20px;
         font-weight: 800;
       }
     }

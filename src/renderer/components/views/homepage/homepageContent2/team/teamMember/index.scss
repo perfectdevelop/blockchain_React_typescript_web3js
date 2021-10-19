@@ -23,6 +23,7 @@
     }
   }
   img {
+    
     width: 90%;
     height: auto;
     border-radius: 10px;
@@ -52,6 +53,7 @@
     text-align: left;
     img {
       width: 50%;
+      box-shadow: 0 0 0 15px gray;
       height: auto;
       border-radius: 10px;
       border: none;
@@ -90,6 +92,7 @@
     align-items: center;
     img {
       width: 90%;
+      box-shadow: 0 0 0 15px gray;
       height: auto;
       border-radius: 10px;
       border: none;
