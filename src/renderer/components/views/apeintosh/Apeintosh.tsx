@@ -254,9 +254,9 @@ export default function Apeintosh(): JSX.Element {
         </div>
         <div className="home-titles">
           <div className="children-home-title">
-            <div className="firstline">MUTANT ETHER BABIES NFT</div>
+            <div className="firstline">Mutant Ether Babies NFT</div>
             {/* <div>{timer}</div> */}
-            <div className="description">10,000 Out MUTANT ETHER BABIES are on the run on Ethereum Chain.. </div>
+            <div className="description">10,000 Out Mutant Ether Babies are on the run on Ethereum Chain.. </div>
            
             <div className="timewrap" style={{color:'white'}}>
               <p>{monthNames[month]} {day} date {converter(date)}</p>

@@ -20,6 +20,7 @@
   }
   .header-items{
     display: flex;
+    z-index: 1000;
     a{
       color: white;
       font-family: Days One;
