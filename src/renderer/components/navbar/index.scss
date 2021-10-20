@@ -17,9 +17,11 @@
       box-shadow: 0 0 20px #fff;
       transition: all 0.2s linear 0s;
     }
+    
   }
   .header-items{
     display: flex;
+    z-index: 1000;
     a{
       color: white;
       font-family: Days One;

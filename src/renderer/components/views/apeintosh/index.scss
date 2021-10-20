@@ -24,7 +24,7 @@
         text-align: center;
       }
       .firstline, .secondline{
-        font-size: 41px;
+        font-size: 32px;
         color: white;
         letter-spacing: -0.5px;
         line-height: 78px;
@@ -40,7 +40,7 @@
       }
       .description{
         color: white;
-        font-size: 26px;
+        font-size: 20px;
         padding: 0 14%;
       }
       .parent-icons{
@@ -181,14 +181,14 @@
             right: 0px;
             margin: auto;
             top: 0;
-            border: 1px solid #ff4cb5;
+            border: 1px solid white;
           }
           .parent-carousel{
             div{
               div{
                 img{
                   // border: 15px solid hsl(313, 96%, 80%);
-                  border: 15px solid gray;
+                  border: 10px solid #fbdb33;
                 }
               }
             }
