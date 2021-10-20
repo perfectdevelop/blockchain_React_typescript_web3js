@@ -38,11 +38,12 @@ export default function Main(): JSX.Element {
     // return () => {
     //   window.removeEventListener("load", () => {});
     // };
+    
   }, [loading]);
 
   return (
     <div className="main">
-      <Loader display={loading} />
+      {/* <Loader display={loading} /> */}
       <Router>
         <Navbar />
         <Switch>

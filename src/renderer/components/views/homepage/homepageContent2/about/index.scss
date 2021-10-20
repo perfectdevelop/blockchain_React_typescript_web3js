@@ -53,12 +53,15 @@
         display: flex;
         flex-direction: column;
         img{
-            border: 15px solid #fbdb33;
             margin-bottom: 60px;
             margin-top: 10px;
             -webkit-animation: horizontal 2.7s ease-in-out infinite;
             animation: horizontal 2.7s ease-in-out infinite;
             max-width: 250px;
+            outline: none;
+            border-color: #fbdb33;
+            box-shadow: 0 0 30px #fbdb33;
+            border: 10px solid #fbdb33;
         }
     }
 }
