@@ -281,7 +281,8 @@ export default function Apeintosh(): JSX.Element {
             <div className="forthline">NFT collection Game - Metaverse</div>
             <button className="get-llamanow btn-custom-button">Mint Your Mebs</button>
             <div className="stages">
-             <p className="">Minted Mebs</p>
+             <p className="">Minted Mebs : <span>0</span></p>
+             <p className="">Available Mebs : <span>10,000</span></p>
             </div>
           </div>
         </div>
