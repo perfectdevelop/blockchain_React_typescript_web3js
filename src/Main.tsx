@@ -42,7 +42,7 @@ export default function Main(): JSX.Element {
 
   return (
     <div className="main">
-      <Loader display={loading} />
+      {/* <Loader display={loading} /> */}
       <Router>
         <Navbar />
         <Switch>
